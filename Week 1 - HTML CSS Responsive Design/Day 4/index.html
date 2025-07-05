@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost - Favori Dizim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Lost</h2>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#characters" class="nav-link">Karakterler</a>
+          </li>
+          <li class="nav-item">
+            <a href="#episodes" class="nav-link">Bölümler</a>
+          </li>
+          <li class="nav-item">
+            <a href="#favorite-scene" class="nav-link">Favori Sahne</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Hakkında</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Lost</h1>
+        <p class="hero-subtitle">
+          Gizemli bir adada mahsur kalan yolcuların sırlarla dolu hikayesi
+        </p>
+        <button class="favorite-btn" id="favoriteBtn">
+          <i class="fas fa-heart"></i> Favorilere Ekle
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="./img/LostPoster.jpg" width="450" alt="Lost Poster" />
+      </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="main-container">
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Dizi Hakkında</h2>
+          <p>
+            Lost, J.J. Abrams tarafından yaratılan ve 2004-2010 yılları arasında
+            yayınlanan bir Amerikan televizyon dizisidir. Dizi, Pasifik Okyanusu
+            üzerinde düşen Oceanic Airlines Flight 815 uçağının yolcularının
+            gizemli bir adada mahsur kalmasını konu alır. Ada, sırlarla dolu
+            olup, hayatta kalanların geçmişlerini, kaderlerini ve adanın
+            gizemlerini keşfetmelerini sağlar. Dizi, bilim kurgu, fantezi ve
+            drama elementlerini harmanlayarak izleyicileri büyüler.
+          </p>
+        </div>
+      </section>
+
+      <!-- Characters Section -->
+      <section id="characters" class="characters">
+        <div class="container">
+          <h2>Ana Karakterler</h2>
+          <div class="characters-grid">
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./img/Jack_Shephard.png" alt="Jack Shephard" />
+              </div>
+              <div class="character-info">
+                <h3>Jack Shephard</h3>
+                <p>
+                  Omurga cerrahı olan Jack, uçak kazasından sonra adada liderlik
+                  rolünü üstlenir. "Live together, die alone" felsefesini
+                  benimser ve hayatta kalanları korumaya çalışır. Geçmişindeki
+                  babası ile olan karmaşık ilişkisi onu sürekli takip eder.
+                </p>
+              </div>
+            </div>
+
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./img/LockeLost.jpg" alt="John Locke" />
+              </div>
+              <div class="character-info">
+                <h3>John Locke</h3>
+                <p>
+                  Adada tekerlekli sandalyeden kurtulan Locke, adanın mistik
+                  güçlerine inanır ve "The Island" ile özel bir bağlantı
+                  hisseder. Geçmişinde felçli olan Locke, adada yeniden
+                  yürüyebilme yeteneğini kazanır ve adanın sırlarını çözmeye
+                  odaklanır.
+                </p>
+              </div>
+            </div>
+
+            <div class="character-card">
+              <div class="character-image">
+                <img src="./img/Sawyer.jpg" alt="Sawyer" />
+              </div>
+              <div class="character-info">
+                <h3>James "Sawyer" Ford</h3>
+                <p>
+                  Sawyer, adada kendini gizlemek için çeşitli şeyler yapar.
+                  Geçmişindeki suçları ve ailesi ile olan karmaşık ilişkisi onu
+                  sürekli takip eder. Adada yeni bir başlangıç yapma şansı bulur
+                  ancak geçmişi onu yakalamaya devam eder.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Episodes Section -->
+      <section id="episodes" class="episodes">
+        <div class="container">
+          <h2>Bölümler</h2>
+          <div class="episodes-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sezon</th>
+                  <th>Bölüm</th>
+                  <th>Başlık</th>
+                  <th>Açıklama</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Pilot</td>
+                  <td>
+                    Oceanic Flight 815'in düşüşü ve hayatta kalanların adayı
+                    keşfetmesi
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>Walkabout</td>
+                  <td>
+                    Locke'un geçmişi ve adada yürüyebilme yeteneğini kazanması
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>Man of Science, Man of Faith</td>
+                  <td>Hatch'in açılması ve Desmond ile tanışma</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>23</td>
+                  <td>Through the Looking Glass</td>
+                  <td>Charlie'nin ölümü ve "Not Penny's Boat" sahnesi</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>17-18</td>
+                  <td>The End</td>
+                  <td>Dizinin final bölümü ve karakterlerin kaderi</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorite Scene Section -->
+      <section id="favorite-scene" class="favorite-scene">
+        <div class="container">
+          <h2>Favori Sahne</h2>
+          <div class="scene-content">
+            <div class="scene-description">
+              <h3>"Not Penny's Boat" Sahnesi</h3>
+              <p>
+                Charlie'nin Desmond'ın kehanetini hatırlayarak kendini feda
+                ettiği sahne, dizinin en duygusal anlarından biridir. Charlie,
+                Claire ve bebeği Aaron'ı kurtarmak için kendini su altında
+                bırakır ve son anında Desmond'a "Not Penny's Boat" yazarak
+                uyarıda bulunur. Bu sahne, fedakarlık ve kader temalarını
+                mükemmel şekilde yansıtır.
+              </p>
+            </div>
+            <div class="scene-video">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/lS7WEmYMbA8"
+                title="Lost - Not Penny's Boat Scene"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="about-me">
+        <div class="container">
+          <h2>Hakkında</h2>
+          <div class="about-content">
+            <div class="profile-image">
+              <img src="./img/github-photo.jpg" alt="Profil Fotoğrafı" />
+            </div>
+            <div class="profile-info">
+              <h3>Emrullah Yavuz</h3>
+              <p>
+                Merhaba! Ben bir web geliştiricisiyim ve Lost dizisinin büyük
+                bir hayranıyım. Bu web sitesi, dizinin gizemlerini ve
+                karakterlerin karmaşık hikayelerini yansıtmak için
+                tasarlanmıştır. Lost'un sırlarla dolu dünyası beni her zaman
+                büyülemiştir.
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/emrullahyavuz"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/emrullah-yavuz-b25549211/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Lost Fan Site. Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
