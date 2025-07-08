@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sepeti Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Alışveriş Sepeti Uygulaması</h1>
+        </header>
+
+        <main>
+            <!-- Kullanıcı Bilgileri Bölümü -->
+            <section class="user-info">
+                <h2>👤 Kullanıcı Bilgileri</h2>
+                <div id="userDisplay" class="user-display">
+                    <p>Kullanıcı bilgileri henüz girilmedi.</p>
+                </div>
+                <button id="getUserInfo" class="btn btn-primary">Kullanıcı Bilgilerini Gir</button>
+            </section>
+
+            <!-- Ürün Ekleme Bölümü -->
+            <section class="add-product">
+                <h2>➕ Ürün Ekle</h2>
+                <div class="form-group">
+                    <input type="text" id="productName" placeholder="Ürün adı" class="form-input">
+                    <input type="number" id="productPrice" placeholder="Fiyat (TL)" class="form-input" min="0" step="0.01">
+                    <button id="addProduct" class="btn btn-success">Sepete Ekle</button>
+                </div>
+            </section>
+
+            <!-- Sepet Bölümü -->
+            <section class="cart">
+                <h2>🛍️ Sepetim</h2>
+                <div id="cartItems" class="cart-items">
+                    <p class="empty-cart">Sepetiniz boş.</p>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="total">
+                        <strong>Toplam: <span id="cartTotal">0.00</span> TL</strong>
+                    </div>
+                    <button id="clearCart" class="btn btn-danger">Sepeti Temizle</button>
+                </div>
+            </section>
+
+            <!-- Örnek Ürünler -->
+            <section class="sample-products">
+                <h2>📦 Örnek Ürünler</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-name="Laptop" data-price="15000">
+                        <h3>💻 Laptop</h3>
+                        <p class="price">15,000 TL</p>
+                        <button class="btn btn-sm btn-primary add-sample">Sepete Ekle</button>
+                    </div>
+                    <div class="product-card" data-name="Telefon" data-price="8000">
+                        <h3>📱 Telefon</h3>
+                        <p class="price">8,000 TL</p>
+                        <button class="btn btn-sm btn-primary add-sample">Sepete Ekle</button>
+                    </div>
+                    <div class="product-card" data-name="Kulaklık" data-price="500">
+                        <h3>🎧 Kulaklık</h3>
+                        <p class="price">500 TL</p>
+                        <button class="btn btn-sm btn-primary add-sample">Sepete Ekle</button>
+                    </div>
+                    <div class="product-card" data-name="Mouse" data-price="200">
+                        <h3>🖱️ Mouse</h3>
+                        <p class="price">200 TL</p>
+                        <button class="btn btn-sm btn-primary add-sample">Sepete Ekle</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
