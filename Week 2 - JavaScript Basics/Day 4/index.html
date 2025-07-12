@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev Yönetim Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Görev Yönetim Uygulaması</h1>
+            <p>Görevlerinizi organize edin ve takip edin</p>
+        </header>
+
+        <!-- Görev Ekleme Formu -->
+        <section class="task-form-section">
+            <h2>Yeni Görev Ekle</h2>
+            <form id="task-form" class="task-form">
+                <div class="form-group">
+                    <label for="task-title">Görev Başlığı *</label>
+                    <input type="text" id="task-title" name="title" required placeholder="Görev başlığını giriniz">
+                    <span class="error-message" id="title-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-description">Açıklama</label>
+                    <textarea id="task-description" name="description" placeholder="Görev açıklamasını giriniz (opsiyonel)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <fieldset class="priority-fieldset">
+                        <legend class="priority-legend">Öncelik *</legend>
+                        <div class="priority-options">
+                            <label class="radio-label">
+                                <input type="radio" name="priority" value="low" required>
+                                <span class="radio-custom"></span>
+                                Düşük
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="priority" value="medium" required>
+                                <span class="radio-custom"></span>
+                                Orta
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="priority" value="high" required>
+                                <span class="radio-custom"></span>
+                                Yüksek
+                            </label>
+                        </div>
+                    </fieldset>
+                    <span class="error-message" id="priority-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Görev Ekle</button>
+            </form>
+        </section>
+
+        <!-- Filtreleme ve Sıralama -->
+        <section class="filter-section">
+            <div class="filter-controls">
+                <button id="show-all" class="btn btn-filter active">Tümü</button>
+                <button id="show-completed" class="btn btn-filter">Tamamlananlar</button>
+                <button id="show-pending" class="btn btn-filter">Bekleyenler</button>
+            </div>
+            <div class="sort-controls">
+                <label for="sort-select">Sırala:</label>
+                <select id="sort-select" class="sort-select">
+                    <option value="date">Oluşturulma Tarihi</option>
+                    <option value="priority">Öncelik</option>
+                    <option value="title">Başlık</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Görev Listesi -->
+        <section class="task-list-section">
+            <h2>Görev Listesi</h2>
+            <div id="task-list" class="task-list">
+                <!-- Görevler buraya dinamik olarak eklenecek -->
+            </div>
+            <div id="empty-state" class="empty-state">
+                <p>Henüz görev eklenmemiş. İlk görevinizi ekleyerek başlayın!</p>
+            </div>
+        </section>
+
+        <!-- İstatistikler -->
+        <section class="stats-section">
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-tasks">0</span>
+                    <span class="stat-label">Toplam Görev</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completed-tasks">0</span>
+                    <span class="stat-label">Tamamlanan</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="pending-tasks">0</span>
+                    <span class="stat-label">Bekleyen</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
