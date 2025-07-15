@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Ahmet Yılmaz",
+        "class": "10-A",
+        "grade": 85,
+        "status": "Başarılı"
+    },
+    {
+        "id": 2,
+        "name": "Ayşe Demir",
+        "class": "11-B",
+        "grade": 92,
+        "status": "Başarılı"
+    },
+    {
+        "id": 3,
+        "name": "Mehmet Kaya",
+        "class": "9-A",
+        "grade": 78,
+        "status": "Orta"
+    },
+    {
+        "id": 4,
+        "name": "Fatma Özkan",
+        "class": "12-A",
+        "grade": 95,
+        "status": "Başarılı"
+    },
+    {
+        "id": 5,
+        "name": "Ali Çelik",
+        "class": "10-B",
+        "grade": 65,
+        "status": "Orta"
+    },
+    {
+        "id": 6,
+        "name": "Selin Kaya",
+        "class": "11-A",
+        "grade": 100,
+        "status": "Mükemmel"
+    }
+] 

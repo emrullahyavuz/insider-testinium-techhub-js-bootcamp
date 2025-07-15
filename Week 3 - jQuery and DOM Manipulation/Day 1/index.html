@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Yönetim Sistemi - jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Öğrenci Yönetim Sistemi</h1>
+        </div>
+
+        <div class="content">
+            <!-- Başarı ve Hata Mesajları -->
+            <div id="successMessage" class="success-message"></div>
+            <div id="errorMessage" class="error-message"></div>
+
+            <!-- İstatistikler -->
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="totalStudents">0</h3>
+                    <p>Toplam Öğrenci</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="averageGrade">0</h3>
+                    <p>Ortalama Not</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="topClass">-</h3>
+                    <p>En Popüler Sınıf</p>
+                </div>
+            </div>
+
+            <!-- Öğrenci Ekleme Formu -->
+            <div class="form-section">
+                <h2>➕ Yeni Öğrenci Ekle</h2>
+                <form id="studentForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="studentName">Öğrenci Adı:</label>
+                            <input type="text" id="studentName" placeholder="Öğrenci adını girin" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="studentClass">Sınıf:</label>
+                            <select id="studentClass" required>
+                                <option value="">Sınıf seçin</option>
+                                <option value="9-A">9-A</option>
+                                <option value="9-B">9-B</option>
+                                <option value="10-A">10-A</option>
+                                <option value="10-B">10-B</option>
+                                <option value="11-A">11-A</option>
+                                <option value="11-B">11-B</option>
+                                <option value="12-A">12-A</option>
+                                <option value="12-B">12-B</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="studentGrade">Not (0-100):</label>
+                            <input type="number" id="studentGrade" min="0" max="100" placeholder="0-100 arası" required>
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-primary">Öğrenci Ekle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Öğrenci Tablosu -->
+            <div class="table-section">
+                <h2>📋 Öğrenci Listesi</h2>
+                <table class="student-table" id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ad Soyad</th>
+                            <th>Sınıf</th>
+                            <th>Not</th>
+                            <th>Durum</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        <!-- Öğrenci verileri buraya dinamik olarak eklenecek -->
+                    </tbody>
+                </table>
+                <div id="emptyMessage" class="empty-message">
+                    Henüz öğrenci eklenmemiş. Yeni öğrenci eklemek için yukarıdaki formu kullanın.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
