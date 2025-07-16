@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f4f6fb 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 48px auto 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(102,126,234,0.13), 0 1.5px 6px rgba(0,0,0,0.04);
+    padding: 40px 28px 32px 28px;
+    transition: box-shadow 0.2s;
+}
+
+h1 {
+    text-align: center;
+    color: #3a3a4a;
+    margin-bottom: 36px;
+    font-size: 2.1em;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+#postContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.post {
+    background: #f8faff;
+    border-radius: 12px;
+    padding: 22px 20px 18px 20px;
+    box-shadow: 0 2px 12px rgba(102,126,234,0.07);
+    border-left: 5px solid #667eea;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+.post:hover {
+    box-shadow: 0 6px 24px rgba(102,126,234,0.16);
+    border-left: 5px solid #764ba2;
+}
+
+.post-title {
+    font-size: 1.18em;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 10px;
+    letter-spacing: 0.1px;
+}
+
+.post-body {
+    color: #444;
+    font-size: 1.04em;
+    line-height: 1.6;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0 0 0;
+    min-height: 60px;
+}
+
+.spinner {
+    width: 36px;
+    height: 36px;
+    border: 4px solid #e3e6f0;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.08em;
+    letter-spacing: 0.2px;
+}
+
+#error {
+    text-align: center;
+    color: #ff4d4f;
+    background: #fff1f0;
+    border: 1px solid #ffb3b8;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 28px 0 0 0;
+    padding: 14px 0;
+    font-size: 1.05em;
+    box-shadow: 0 2px 8px rgba(255,77,79,0.07);
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 4vw 18px 4vw;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    .post {
+        padding: 14px 8px 12px 10px;
+    }
+} 
