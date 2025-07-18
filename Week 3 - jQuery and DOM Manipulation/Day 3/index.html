@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Profil Kartları & Animasyonlu Arayüz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rastgele Profil Kartları</h1>
+        <button id="fetchProfiles" class="btn-main">Rastgele Profilleri Getir</button>
+        <div id="profileCards" class="profile-cards"></div>
+        <h2 class="slider-title">Profil Slider</h2>
+        <div id="profileSlider" class="profile-slider"></div>
+    </div>
+    <div style="display:none">
+        <div id="profileModal" class="profile-modal"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
